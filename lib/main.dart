@@ -17,14 +17,14 @@ class MyApp extends StatelessWidget {
 
       // 1. Konfigurasi Tema Terang Material 3
       theme: ThemeData(
-        colorSchemeSeed: Colors.teal,
+        colorSchemeSeed: Colors.deepOrangeAccent,
         useMaterial3: true,
         brightness: Brightness.light,
       ),
 
       // 2. Konfigurasi Tema Gelap Material 3
       darkTheme: ThemeData(
-        colorSchemeSeed: Colors.teal,
+        colorSchemeSeed: Colors.deepOrangeAccent,
         useMaterial3: true,
         brightness: Brightness.dark,
       ),
