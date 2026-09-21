@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+
+import 'halaman_utama.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Nusantara Cerdas',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorSchemeSeed: Colors.teal, // Tema warna kota
+        useMaterial3: true,
+      ),
+      home: const HalamanUtama(),
+    );
+  }
+}
