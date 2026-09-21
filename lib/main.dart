@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'halaman_utama.dart';
 
 void main() {
@@ -14,24 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Nusantara Cerdas',
       debugShowCheckedModeBanner: false,
-
-      // 1. Konfigurasi Tema Terang Material 3
       theme: ThemeData(
-        colorSchemeSeed: Colors.deepOrangeAccent,
+        colorSchemeSeed: Colors.teal, // Tema warna kota
         useMaterial3: true,
-        brightness: Brightness.light,
       ),
-
-      // 2. Konfigurasi Tema Gelap Material 3
-      darkTheme: ThemeData(
-        colorSchemeSeed: Colors.deepOrangeAccent,
-        useMaterial3: true,
-        brightness: Brightness.dark,
-      ),
-
-      // 3. Otomatis mengikuti pengaturan sistem perangkat (Terang/Gelap)
-      themeMode: ThemeMode.system,
-
       home: const HalamanUtama(),
     );
   }
